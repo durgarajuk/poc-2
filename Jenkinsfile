@@ -3,7 +3,6 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                // Ensure you update the URL below to your specific repository
                 git branch: 'main', url: 'https://github.com/durgarajuk/poc-2.git'
             }
         }
@@ -14,8 +13,9 @@ pipeline {
         }
         stage('Test Inside Container') {
             steps {
+                // UPDATE THIS LINE TO MATCH YOUR CURRENT Hello.java OUTPUT
                 sh '''
-                docker run --rm java-poc:v1 sh -c "java Hello | grep 'WebHook Works test'"
+                docker run --rm java-poc:v1 sh -c "java Hello | grep 'Hello, this is a live demo!'"
                 '''
             }
         }
