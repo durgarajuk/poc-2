@@ -1,5 +1,5 @@
 public class Hello {
     public static void main(String[] args) {
-        System.out.println("Hello, Pipeline is fully updated");
+        System.out.println("Hello, this is a live demo!");
     }
 }
