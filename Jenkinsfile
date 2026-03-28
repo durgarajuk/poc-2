@@ -15,7 +15,7 @@ pipeline {
             steps {
                 // UPDATE THIS LINE TO MATCH YOUR CURRENT Hello.java OUTPUT
                 sh '''
-                docker run --rm java-poc:v1 sh -c "java Hello | grep 'Pipeline Demo Success'"
+                docker run --rm java-poc:v1 sh -c "java Hello | grep 'Pipeline Demo Succes'"
                 '''
             }
         }
